@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>myFood: Cart</title>
+        <meta charset="utf-8"/>
+        <meta name="keywords" content="Restaurant,Asian food, food, drink"/>
+        <link href="reset.css" rel="stylesheet"/>
+        <link href="myFood.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <form name="cart" id="cart" action="success.html" method="get">
+            
+            <div class="navbar">
+                <img src="myFood-logo.png" id="logo" alt="myFood Logo"/>
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+    
+                <div class="dropdown">
+                    <li><button class="dropbtn">Menu
+                    <i class="menu_dropdown"></i>
+                    </button></li>
+                
+                    <div class="dropdown-content">
+                        <li><a href="menu.html">Best Seller</a></li>
+                        <li><a href="bread&bun.html">Bread & Bun</a></li>
+                        <li><a href="noodles.html">Noodles</a></li>
+                        <li><a href="rice.html">Rice</a></li>
+                        <li><a href="western_food.html">Western Food</a></li>
+                        <li><a href="kids_meal.html">Kids Meal</a></li>
+                        <li><a href="lite_bites.html">Lite Bites</a></li>
+                        <li><a href="desserts.html">Desserts</a></li>
+                        <li><a href="beverages.html">Beverages</a></li>
+                    </div>
+                </div> 
+                <li><a href="order.html">Order</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="cart">
+                    <a href="cart.html" class="fa fa-shopping-cart icons"> Cart <span>0</span></a>
+                </li>
+            </div>
+
+            <div class="products-container">
+                <div class="product-header">
+                    <h2 class="product-title">PRODUCT</h2>
+                    <h2 class="price">PRICE</h2>
+                    <h2 class="quantity">QUANTITY</h2>
+                    <h2 class="total">TOTAL</h2>
+                </div>
+                <div class="products"></div>
+                <input type="button" value="Cancel Order" onclick="cancelorder()" style="margin-top: 20px; margin-left: 560px;"/>
+            </div>
+
+            <div class="goToPayment">
+                <a href="payment.html">Go To Payment</a>
+            </div>
+            <script src="main.js"></script>
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script
+        </form>
+    </body>
+</html>
